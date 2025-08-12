@@ -42,7 +42,7 @@
         </div>
 
         <!-- Main Content with Images -->
-        <div class="relative flex flex-col lg:flex-row items-center justify-between w-full mb-12 px-4">
+        <div class="relative flex flex-row items-center justify-between w-full mb-12 px-4 overflow-x-auto min-h-[400px]">
             <!-- SVG for connecting lines -->
             <svg class="absolute inset-0 w-full h-full pointer-events-none z-10" id="connectionSvg">
                 <line id="connectionLine" x1="0" y1="0" x2="0" y2="0" stroke="#10b981" stroke-width="3" stroke-dasharray="5,5" opacity="0" class="transition-opacity duration-300">
@@ -51,7 +51,7 @@
             </svg>
 
             <!-- Left Section: Left Image + Time Boxes -->
-            <div class="flex flex-col lg:flex-row items-center gap-6">
+            <div class="flex flex-row items-center gap-6 flex-shrink-0">
                 <!-- Left Image -->
                 <div class="flex-shrink-0">
                     <div class="text-center mb-4">
@@ -61,24 +61,24 @@
                         <img 
                             src="https://raw.githubusercontent.com/mathnology/Kuasai-16-Tenses-Tanpa-Stres-dengan-Metode-SIP-Sederhana-Interaktif-dan-Praktis-/refs/heads/main/SIP%20PANAH.png" 
                             alt="Metode SIP - Kiri" 
-                            class="w-64 h-64 object-contain rounded-lg"
+                            class="w-32 h-32 sm:w-48 sm:h-48 lg:w-64 lg:h-64 object-contain rounded-lg"
                         />
                     </div>
                 </div>
                 
                 <!-- Time Boxes (Present, Past, Future, Past Future) -->
                 <div class="flex flex-col gap-4">
-                    <div class="time-box cursor-pointer bg-gradient-to-r from-green-400 to-green-500 text-white rounded-lg p-4 shadow-lg hover:shadow-xl transition-all duration-300 min-w-[160px] text-center border-4 border-transparent" data-time="present" data-formula="V1 (s/es)">
-                        <h3 class="font-bold text-sm">Present [ V1 (s/es) ]</h3>
+                    <div class="time-box cursor-pointer bg-gradient-to-r from-green-400 to-green-500 text-white rounded-lg p-2 sm:p-3 lg:p-4 shadow-lg hover:shadow-xl transition-all duration-300 min-w-[120px] sm:min-w-[140px] lg:min-w-[160px] text-center border-4 border-transparent" data-time="present" data-formula="V1 (s/es)">
+                        <h3 class="font-bold text-xs sm:text-sm">Present [ V1 (s/es) ]</h3>
                     </div>
-                    <div class="time-box cursor-pointer bg-gradient-to-r from-blue-400 to-blue-500 text-white rounded-lg p-4 shadow-lg hover:shadow-xl transition-all duration-300 min-w-[160px] text-center border-4 border-transparent" data-time="past" data-formula="V2">
-                        <h3 class="font-bold text-sm">Past [ V2 ]</h3>
+                    <div class="time-box cursor-pointer bg-gradient-to-r from-blue-400 to-blue-500 text-white rounded-lg p-2 sm:p-3 lg:p-4 shadow-lg hover:shadow-xl transition-all duration-300 min-w-[120px] sm:min-w-[140px] lg:min-w-[160px] text-center border-4 border-transparent" data-time="past" data-formula="V2">
+                        <h3 class="font-bold text-xs sm:text-sm">Past [ V2 ]</h3>
                     </div>
-                    <div class="time-box cursor-pointer bg-gradient-to-r from-purple-400 to-purple-500 text-white rounded-lg p-4 shadow-lg hover:shadow-xl transition-all duration-300 min-w-[160px] text-center border-4 border-transparent" data-time="future" data-formula="will + V1">
-                        <h3 class="font-bold text-sm">Future [ will + V1 ]</h3>
+                    <div class="time-box cursor-pointer bg-gradient-to-r from-purple-400 to-purple-500 text-white rounded-lg p-2 sm:p-3 lg:p-4 shadow-lg hover:shadow-xl transition-all duration-300 min-w-[120px] sm:min-w-[140px] lg:min-w-[160px] text-center border-4 border-transparent" data-time="future" data-formula="will + V1">
+                        <h3 class="font-bold text-xs sm:text-sm">Future [ will + V1 ]</h3>
                     </div>
-                    <div class="time-box cursor-pointer bg-gradient-to-r from-orange-400 to-orange-500 text-white rounded-lg p-4 shadow-lg hover:shadow-xl transition-all duration-300 min-w-[160px] text-center border-4 border-transparent" data-time="past-future" data-formula="would + V1">
-                        <h3 class="font-bold text-sm">Past Future</h3>
+                    <div class="time-box cursor-pointer bg-gradient-to-r from-orange-400 to-orange-500 text-white rounded-lg p-2 sm:p-3 lg:p-4 shadow-lg hover:shadow-xl transition-all duration-300 min-w-[120px] sm:min-w-[140px] lg:min-w-[160px] text-center border-4 border-transparent" data-time="past-future" data-formula="would + V1">
+                        <h3 class="font-bold text-xs sm:text-sm">Past Future</h3>
                     </div>
                 </div>
             </div>
@@ -86,20 +86,20 @@
 
 
             <!-- Right Section: Aspect Boxes + Right Image -->
-            <div class="flex flex-col lg:flex-row items-center gap-6">
+            <div class="flex flex-row items-center gap-6 flex-shrink-0">
                 <!-- Aspect Boxes (Simple, Continuous, Perfect, Perfect Continuous) -->
                 <div class="flex flex-col gap-4">
-                    <div class="event-box cursor-pointer bg-gradient-to-r from-red-400 to-red-500 text-white rounded-lg p-4 shadow-lg hover:shadow-xl transition-all duration-300 min-w-[180px] text-center border-4 border-transparent" data-event="simple" data-formula="∅">
-                        <h3 class="font-bold text-lg">Simple [∅]</h3>
+                    <div class="event-box cursor-pointer bg-gradient-to-r from-red-400 to-red-500 text-white rounded-lg p-2 sm:p-3 lg:p-4 shadow-lg hover:shadow-xl transition-all duration-300 min-w-[140px] sm:min-w-[160px] lg:min-w-[180px] text-center border-4 border-transparent" data-event="simple" data-formula="∅">
+                        <h3 class="font-bold text-sm sm:text-base lg:text-lg">Simple [∅]</h3>
                     </div>
-                    <div class="event-box cursor-pointer bg-gradient-to-r from-yellow-400 to-yellow-500 text-white rounded-lg p-4 shadow-lg hover:shadow-xl transition-all duration-300 min-w-[180px] text-center border-4 border-transparent" data-event="continuous" data-formula="be + Ving">
-                        <h3 class="font-bold text-sm">Continuous [ be + Ving ]</h3>
+                    <div class="event-box cursor-pointer bg-gradient-to-r from-yellow-400 to-yellow-500 text-white rounded-lg p-2 sm:p-3 lg:p-4 shadow-lg hover:shadow-xl transition-all duration-300 min-w-[140px] sm:min-w-[160px] lg:min-w-[180px] text-center border-4 border-transparent" data-event="continuous" data-formula="be + Ving">
+                        <h3 class="font-bold text-xs sm:text-sm">Continuous [ be + Ving ]</h3>
                     </div>
-                    <div class="event-box cursor-pointer bg-gradient-to-r from-indigo-400 to-indigo-500 text-white rounded-lg p-4 shadow-lg hover:shadow-xl transition-all duration-300 min-w-[180px] text-center border-4 border-transparent" data-event="perfect" data-formula="have + V3">
-                        <h3 class="font-bold text-sm">Perfect [ have + V3 ]</h3>
+                    <div class="event-box cursor-pointer bg-gradient-to-r from-indigo-400 to-indigo-500 text-white rounded-lg p-2 sm:p-3 lg:p-4 shadow-lg hover:shadow-xl transition-all duration-300 min-w-[140px] sm:min-w-[160px] lg:min-w-[180px] text-center border-4 border-transparent" data-event="perfect" data-formula="have + V3">
+                        <h3 class="font-bold text-xs sm:text-sm">Perfect [ have + V3 ]</h3>
                     </div>
-                    <div class="event-box cursor-pointer bg-gradient-to-r from-pink-400 to-pink-500 text-white rounded-lg p-4 shadow-lg hover:shadow-xl transition-all duration-300 min-w-[180px] text-center border-4 border-transparent" data-event="perfect-continuous" data-formula="have been + Ving">
-                        <h3 class="font-bold text-sm">Perfect Continuous</h3>
+                    <div class="event-box cursor-pointer bg-gradient-to-r from-pink-400 to-pink-500 text-white rounded-lg p-2 sm:p-3 lg:p-4 shadow-lg hover:shadow-xl transition-all duration-300 min-w-[140px] sm:min-w-[160px] lg:min-w-[180px] text-center border-4 border-transparent" data-event="perfect-continuous" data-formula="have been + Ving">
+                        <h3 class="font-bold text-xs sm:text-sm">Perfect Continuous</h3>
                     </div>
                 </div>
                 
@@ -112,7 +112,7 @@
                         <img 
                             src="https://raw.githubusercontent.com/mathnology/Kuasai-16-Tenses-Tanpa-Stres-dengan-Metode-SIP-Sederhana-Interaktif-dan-Praktis-/refs/heads/main/SIP%20PANAH.png" 
                             alt="Metode SIP - Kanan" 
-                            class="w-64 h-64 object-contain rounded-lg transform scale-x-[-1]"
+                            class="w-32 h-32 sm:w-48 sm:h-48 lg:w-64 lg:h-64 object-contain rounded-lg transform scale-x-[-1]"
                         />
                     </div>
                 </div>
@@ -388,14 +388,14 @@
                 const tenseName = tenseMap[tenseKey];
                 
                 resultDisplay.innerHTML = `
-                    <h3 class="text-3xl font-bold text-green-600">${tenseName}</h3>
+                    <h3 class="text-xl sm:text-2xl lg:text-3xl font-bold text-green-600">${tenseName}</h3>
                 `;
                 resultDisplay.classList.remove('opacity-50', 'border-gray-200');
                 resultDisplay.classList.add('border-green-400');
             } else {
                 resultDisplay.innerHTML = `
-                    <h3 class="text-2xl font-bold text-gray-400 mb-2">Pilih TIME & EVENT</h3>
-                    <p class="text-lg text-gray-400">untuk melihat jenis tenses</p>
+                    <h3 class="text-lg sm:text-xl lg:text-2xl font-bold text-gray-400 mb-2">Pilih TIME & EVENT</h3>
+                    <p class="text-sm sm:text-base lg:text-lg text-gray-400">untuk melihat jenis tenses</p>
                 `;
                 resultDisplay.classList.add('opacity-50', 'border-gray-200');
                 resultDisplay.classList.remove('border-green-400');
@@ -428,5 +428,5 @@
         // Update connection on window resize
         window.addEventListener('resize', updateConnection);
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96dfd20b22569daa',t:'MTc1NTAwMDExMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96dfdb4664418bcb',t:'MTc1NTAwMDQ5MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
